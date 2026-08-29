@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+
+:root {
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +23,7 @@ body {
   color: white;
 }
 
-
-.page1 {
+.home {
   width: 100%;
   min-height: 100vh;
   background-color: rgb(20, 20, 20);
@@ -28,7 +36,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: var(--space-md);
 }
 
 .logo {
@@ -48,16 +56,16 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2.7rem;
 }
 
 .nav-links li a {
-  padding: 1.4rem;
+  padding: var(--space-lg);
   font-family: "Forum", serif;
   font-weight: 600;
   font-size: 1.9rem;
   position: relative;
   text-decoration: none;
+  color: white;
 }
 
 .btn1 {
@@ -65,7 +73,7 @@ body {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
   border: none;
-  padding: 1rem;
+  padding: var(--space-sm);
   border-radius: 0.6rem;
   cursor: pointer;
   font-weight: 600;
@@ -74,7 +82,7 @@ body {
 }
 
 .btn1:hover {
- transform:  scale(1.05);
+  transform: scale(1.05);
 }
 
 .hero-section {
@@ -91,7 +99,7 @@ body {
   display: flex;
   justify-content: right;
   flex-direction: column;
-  gap: 4rem;
+  gap: var(--space-lg);
 }
 
 .right-heading p {
@@ -128,7 +136,7 @@ body {
   height: 80px;
   background-color: rgb(74, 74, 74);
   border-radius: 0.6rem;
-  margin: 0.5rem;
+  margin: var(--space-xs);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,7 +149,7 @@ body {
 
 
 /* =============  About Section  ==============*/
-.page2 {
+.about {
   width: 100%;
   height: 100%;
   background-color: rgb(1, 1, 1);
@@ -189,7 +197,7 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
-  gap: 6rem;
+  gap: var(--space-xl);
 }
 
 .logos li img {
@@ -209,7 +217,6 @@ body {
   font-family: "Lato", sans-serif;
   color: rgba(255, 255, 255, 0.362);
 }
-
 
 .horizontal-line {
   padding: 5rem 0 0 0;
@@ -231,7 +238,7 @@ body {
   color: rgb(69, 69, 69);
 }
 
-.about-heading-area .white-text {
+.white-text {
   color: white;
 }
 
@@ -246,15 +253,15 @@ body {
 .about-section h3 {
   font-size: 2rem;
   font-family: "Forum", serif;
-  margin-top: 4rem;
+  margin-top: var(--space-lg);
   cursor: pointer;
   padding: 8rem 2rem 8rem 2rem;
 }
 
 /* =============  Service Section  ==============*/
-.page3 {
+.service {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .horizontal-line h4 {
@@ -266,32 +273,47 @@ body {
   left: 200px;
 }
 
-.image-reveal-section{
+.image-reveal-section {
   display: flex;
   justify-content: space-between;
 }
 
-.site-container ul li {
+.site-container h2 {
   list-style: none;
   font-size: 5rem;
   font-family: "Hammersmith One", sans-serif;
-    color: rgb(69, 69, 69);
+  color: rgb(69, 69, 69);
 }
 
-.image-section{
+.image-section {
   background-color: white;
   width: 700px;
   height: 500px;
 }
 
-.image-section img{
+.image-section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0;
 }
 
-.page4{
+/* =============  Service Section  ==============*/
+.work {
   width: 100%;
   height: 100vh;
+}
+
+.work-lines {
+  display: flex;
+  justify-content: center;
+
+}
+
+.work-lines h2 {
+  font-size: 4.1rem;
+  text-align: center;
+  font-weight: 400;
+  margin-top: var(--space-lg);
+  width: 90%;
 }
