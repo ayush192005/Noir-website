@@ -1,0 +1,297 @@
+/* Fonts Styles */
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+
+.page1 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(20, 20, 20);
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2.7rem;
+}
+
+.nav-links li a {
+  padding: 1.4rem;
+  font-family: "Forum", serif;
+  font-weight: 600;
+  font-size: 1.9rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.btn1 {
+  background-color: rgb(249, 249, 249);
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Forum", serif;
+  transition: transform 0.3s ease-in;
+}
+
+.btn1:hover {
+ transform:  scale(1.05);
+}
+
+.hero-section {
+  width: 100%;
+  height: 60vh;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-heading {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.right-heading p {
+  font-size: 1.9rem;
+  font-family: "Forum", serif;
+  font-weight: 500;
+  text-align: right;
+}
+
+.hero-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-heading h1 {
+  font-size: clamp(3rem, 4vw, 8rem);
+  font-family: "Forum", serif;
+  font-weight: 500;
+}
+
+.video-box {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(48, 48, 48);
+  margin: 8rem 0 2rem 0rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.play-button {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(74, 74, 74);
+  border-radius: 0.6rem;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.play-button i {
+  font-size: 4rem;
+}
+
+
+/* =============  About Section  ==============*/
+.page2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(1, 1, 1);
+}
+
+.heading {
+  width: 100%;
+}
+
+.page-two-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 2rem 0rem 2rem;
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+.page-two-heading h2 {
+  font-size: 4rem;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 100;
+  color: rgb(69, 69, 69);
+}
+
+.page-two-heading span {
+  color: white;
+}
+
+.company-logo {
+  width: 100%;
+}
+
+.brand-logo {
+  padding: 11rem 0 6rem 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.logos {
+  max-width: 1600px;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  gap: 6rem;
+}
+
+.logos li img {
+  height: 140px;
+}
+
+.about-section {
+  width: 100%;
+  position: relative;
+}
+
+.horizontal-line .page-no {
+  width: 0%;
+  position: absolute;
+  top: -40px;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  color: rgba(255, 255, 255, 0.362);
+}
+
+
+.horizontal-line {
+  padding: 5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(254, 253, 253, 0.253);
+  max-width: 1800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-heading-area p {
+  font-size: 3rem;
+  font-family: "Hammersmith One", sans-serif;
+  text-align: right;
+}
+
+.about-heading-area span {
+  color: rgb(69, 69, 69);
+}
+
+.about-heading-area .white-text {
+  color: white;
+}
+
+.about-right-text {
+  padding-left: 20rem;
+}
+
+.about-left-text {
+  padding-right: 10rem;
+}
+
+.about-section h3 {
+  font-size: 2rem;
+  font-family: "Forum", serif;
+  margin-top: 4rem;
+  cursor: pointer;
+  padding: 8rem 2rem 8rem 2rem;
+}
+
+/* =============  Service Section  ==============*/
+.page3 {
+  width: 100%;
+  height: 100vh;
+}
+
+.horizontal-line h4 {
+  font-size: 1.2rem;
+  color: rgb(69, 69, 69);
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  top: -36px;
+  left: 200px;
+}
+
+.image-reveal-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-container ul li {
+  list-style: none;
+  font-size: 5rem;
+  font-family: "Hammersmith One", sans-serif;
+    color: rgb(69, 69, 69);
+}
+
+.image-section{
+  background-color: white;
+  width: 700px;
+  height: 500px;
+}
+
+.image-section img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.page4{
+  width: 100%;
+  height: 100vh;
+}
